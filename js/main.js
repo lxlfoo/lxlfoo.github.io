@@ -1,14 +1,14 @@
 'use strict'
 
-	/** 우클릭 방지 */
-// document.addEventListener('mousedown', function(e) {
-// 	if (e.button == 2) {
-// 		e.preventDefault();
-// 		return false;
-// 	}
-// });
+/** 우클릭 방지 */
+document.addEventListener('mousedown', function(e) {
+	if (e.button == 2) {
+		e.preventDefault();
+		return false;
+	}
+});
 
-	/** F12 버튼 방지 */
+/** F12 버튼 방지 */
 document.addEventListener('keydown', function(e) {
 	if (e.keyCode == 123) {
 		e.preventDefault();
@@ -16,10 +16,10 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 
+/** video test */
 const promise = document.querySelector('video').play();
 if (promise !== undefined) {
 	promise.then(_ => {
-		console.log('[lxlfoo_scc]');
 	}).catch(error => {
 		console.log('[lxlfoo_err]' + error);
   });

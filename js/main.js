@@ -1,12 +1,12 @@
 'use strict'
 
 	/** 우클릭 방지 */
-document.addEventListener('mousedown', function(e) {
-	if (e.button == 2) {
-		e.preventDefault();
-		return false;
-	}
-});
+// document.addEventListener('mousedown', function(e) {
+// 	if (e.button == 2) {
+// 		e.preventDefault();
+// 		return false;
+// 	}
+// });
 
 	/** F12 버튼 방지 */
 document.addEventListener('keydown', function(e) {
@@ -19,7 +19,7 @@ document.addEventListener('keydown', function(e) {
 const promise = document.querySelector('video').play();
 if (promise !== undefined) {
 	promise.then(_ => {
-		console.log('[lxlfoo1_scc]');
+		console.log('[lxlfoo_scc]');
 	}).catch(error => {
 		console.log('[lxlfoo_err]' + error);
   });

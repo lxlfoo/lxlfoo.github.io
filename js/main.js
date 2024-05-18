@@ -16,6 +16,15 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 
+const promise = document.querySelector('video').play();
+if (promise !== undefined) {
+	promise.then(_ => {
+		console.log('[lxlfoo1_scc]');
+	}).catch(error => {
+		console.log('[lxlfoo_err]' + error);
+  });
+}
+
 /** 타이핑 */
 const target = document.querySelector('#dynamic');
 
